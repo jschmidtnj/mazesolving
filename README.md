@@ -1,6 +1,6 @@
 # mazesolving
 A variety of algorithms to solve mazes from an input image.
-Originally forked from a Computerphile project, now with some cool changes for maze generation and solving. Will eventually implement dual-side dijkstra's algorithm, which is arguably fastest for maze solving.
+Originally forked from a Computerphile project, now with some cool changes for maze generation and solving. Will eventually implement dual-side dijkstra's algorithm, which is arguably fastest for maze solving. Any input is appreciated.
 
 ## About
 These are the python files for maze generation and solving. Feel free to use, alter, redistribute the code as you see fit.
