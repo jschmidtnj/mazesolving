@@ -21,11 +21,11 @@ def blackWhiteReversal(im):
     crop_height = im.size[1]
     if im.size[0] % 2 == 0:
         crop_width -= 1
-        print(crop_width)
+        #print(crop_width)
     if im.size[1] % 2 == 0:
         crop_height -= 1
-        print(crop_height)
-    print(crop_width, crop_height)
+        #print(crop_height)
+    #print(crop_width, crop_height)
     croppedimg = im.crop((0, 0, crop_width, crop_height))
     return croppedimg
 
@@ -37,6 +37,7 @@ def generatemaze(width, height, output_file, generate_bmp):
     maze.save_bitmap(output_file + '.bmp')
     img = Image.open(output_file + '.bmp')
     blackWhiteReversal(img).save(output_file + '.png', 'png')
+    print("generated maze")
     if not generate_bmp:
         os.remove(output_file + '.bmp')
 

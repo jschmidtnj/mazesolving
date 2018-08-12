@@ -13,4 +13,5 @@ Some example mazes are included in the repository.. Once exported I edited the m
 - One white square exists on the top row of the image, and is the start of the maze.
 - One white square exists on the bottom row of the image, and is the end of the maze.
 
-
+## Installation
+use python 2, python 3 requires a bit of modification regarding the Node less-than comparison. Run `python solve.py [input_file] [output_file]` to use the default configuration on some of the examples. Use the `-m` flag to set a specific algorithm to use (such as Dijkstra, AStar, leftturn, etc.). The Dijkstra and AStar are the fastest. To generate your own mazes, use `python mazegenerator.py [width] [height] [output_file] [generate_bmp]`. Then run `solve.py` to get the result. Or to do the whole sequence in one command, use `python generateandsolve.py [width] [height] [maze_file] [result_file] [generate_bmp]`. And that's it - you now have a consistent maze-solver.
